@@ -1,7 +1,7 @@
 /* 
     ---------------------------------------------------------------
     Add your name to this file below:
-    NAME: 
+    NAME: Yamile Lara
     ---------------------------------------------------------------
 */
 
@@ -24,6 +24,8 @@
 
     /* Font Stacks */
     /* add the two font stacks here */
+	--body-fonts: Lato, Arial, sans-serif;
+	--heading-fonts: 'Seymour One', Impact, sans-serif;
 }
 
 body{
@@ -33,6 +35,10 @@ body{
 	/* set the font color to #222 (--dk-gray) */
 	margin: 0;
 	padding: 0;
+	font-family: var(--body-fonts);
+	line-height: 1.5;
+	font-size: 1.1rem;
+	color: var(--dk-gray);
 }
 
 header{
@@ -46,6 +52,9 @@ h1, h2, h3{
 	/* center align the text */
 	/* use a web font here (instructions on page) */
 	/* make the heading text all small caps style */
+	text-align: center;
+	font-family: var(--heading-fonts);
+	font-variant: small-caps;
 }
 
 h2{
@@ -58,6 +67,7 @@ h3{
 	margin: 0;
 	padding: 4px;
 	/* add an underline like the one on the h2s to the h3s, but make it solid and mint color */
+	text-decoration: solid underline var(--mint);
 }
 
 nav{
@@ -72,9 +82,15 @@ nav ul{
 
 nav a{
 	/* make these display as block level elements */
+	display: block;
 	margin: 1rem auto;
 	padding: 1rem;
 	background-color: var(--tiffany);
+	color: var(--dk-gray);
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 600;
 	/* set the font color to #222 (--dk-gray) */
 	/* center align the text */
 	/* remove the underline */
@@ -104,6 +120,9 @@ p{
 	/* add an indent on the first line of 2rem */
 	/* center those paragraphs (not the text) on the page */
 	padding: 0.5rem;
+	max-width: 55ch;
+	text-indent: 2rem;
+	margin: 0 auto;
 }
 
 a{
@@ -117,9 +136,11 @@ a:hover{
 dl, ol, main ul{
 	/* limit the width of these lists to 55 characters */
 	margin: 1rem auto;
+	max-width: 55ch;
 }
 
 dt{
+	font-weight: bold;
 	/* make this font display in bold weight */
 }
 
